@@ -1,0 +1,6 @@
+Opened https://www.imdb.com/user/p.3d2f7dzdk2un2x5rgmasyhiwyq/watchlist/
+Title: Human Verification
+page.waitForSelector: Timeout 60000ms exceeded.
+Call log:
+  - waiting for locator('a[href*="/title/tt"]') to be visible
+
