@@ -11,6 +11,9 @@ const { chromium } = require('playwright');
   const page = await ctx.newPage();
   try {
     await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 90000 });
+    console.log('Opened', page.url());
+    await page.waitForTimeout(4000);
+    console.log('Title:', await page.title());
     await page.waitForSelector('a[href*="/title/tt"]', { timeout: 60000 });
     // Scroll until no more titles load.
     let last = -1;
